@@ -1,0 +1,7 @@
+{
+  "name": "clean-architecture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Joedyson Bezerra <joedysonbezerra@gmail.com>",
+  "license": "MIT"
+}
