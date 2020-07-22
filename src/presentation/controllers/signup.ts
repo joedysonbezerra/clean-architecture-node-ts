@@ -1,7 +1,8 @@
+/* eslint-disable consistent-return */
+import { HttpResponse, HttpRequest } from '../protocols/http';
+
 export default class SignUpController {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  handle(httpRequest: any): any {
+  handle(httpRequest: HttpRequest): HttpResponse {
     if (!httpRequest.body.name) {
       return {
         statusCode: 400,
@@ -14,6 +15,5 @@ export default class SignUpController {
         body: new Error('Missing param: email'),
       };
     }
-    return {};
   }
 }
